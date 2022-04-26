@@ -18,36 +18,107 @@
         </div>
         <h1 class="page-header__heading">ohmyfood</h1>
     </header>
-    <main>
+    <main class="page-main">
         <article class="restaurant">
-            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût" class="restaurant__image" width="373" height="254">
-            <div class="restaurant__caption">
-                <h2 class="restaurant__caption__heading">La palette du goût</h2>
+            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût" class="page-main__restaurant__image" width="373" height="254">
+            <div class="page-main__restaurant__caption">
+                <h2 class="page-main__restaurant__caption__heading">La palette du goût</h2>
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <form action="#" method="get" class="restaurant__menu">
-                <h3 class="restaurant__menu__heading">Entrées</h3>
+            <form action="#" method="get" class="page-main__restaurant__menu">                          
+                <h3 class="page-main__restaurant__menu__heading">Entrées</h3>
 
-                <div class="restaurant__menu__item">
-                    <div class="restaurant__menu__item__body">
-                        <p class="restaurant__menu__item__body__heading">Fricassée d'escargot</p>
-                        <p class="restaurant__menu__item__body__subheading">Au piment d'Espelette</p>
-                        <p class="restaurant__menu__item__body__price">25€</p>
+                <div class="page-main__restaurant__menu__item">
+                    <div class="page-main__restaurant__menu__item__body">
+                        <label for="appetizer-1">
+                            <span class="page-main__restaurant__menu__item__body__heading">Fricassée d'escargot</span>
+                            <span class="page-main__restaurant__menu__item__body__subheading">Au piment d'Espelette</span>
+                            <span class="page-main__restaurant__menu__item__body__price">25€</span>
+                        </label>
                     </div>
-                    <input type="radio" name="appetizers" value="1" class="restaurant__menu__item__check">
+                    <input type="radio" id="appetizer-1" name="appetizers" value="1" class="page-main__restaurant__menu__item__choose">
                 </div>
 
-                Foie gras de canard mi-cuit<input type="radio" name="appetizers" value="2"><br> 
-                Oeuf au plat<input type="radio" name="appetizers" value="3"><br> 
-                <h3 class="restaurant__menu__heading">Plats</h3>
-                Filet de boeuf aux herbes<input type="radio" name="main-dish" value="1"><br>
-                Parmentier de queue de boeuf<input type="radio" name="main-dish" value="2"><br>
-                Filet de turbot<input type="radio" name="main-dish" value="3"><br>
-                <h3 class="restaurant__menu__heading">Desserts</h3>
-                Paris-Brest<input type="radio" name="dessert" value="1"><br>
-                Macaron au chocolat d'exception <input type="radio" name="dessert" value="1"><br>
-                Mousse au chocolat<input type="radio" name="dessert" value="1"><br>
-                <input type="submit" name="order" value="Commander" class="restaurant__menu__button">
+                <div class="page-main__restaurant__menu__item">
+                    <div class="page-main__restaurant__menu__item__body">
+                        <label for="appetizer-2">
+                            <span class="page-main__restaurant__menu__item__body__heading">Foie gras de canard mi-cuit</span>
+                            <span class="page-main__restaurant__menu__item__body__subheading">Et ses copeaux de truffe noire</span>
+                            <span class="page-main__restaurant__menu__item__body__price">35€</span>
+                        </label>
+                    </div>
+                    <input type="radio" id="appetizer-2" name="appetizers" value="2" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <div class="page-main__restaurant__menu__item">
+                    <div class="page-main__restaurant__menu__item__body">
+                        <label for="appetizer-3">
+                            <span class="page-main__restaurant__menu__item__body__heading">Oeuf au plat</span>
+                            <span class="page-main__restaurant__menu__item__body__subheading">Assaisoné à la truffe sur lit de caviar</span>
+                            <span class="page-main__restaurant__menu__item__body__price">20€</span>
+                        </label>
+                    </div>
+                    <input type="radio" id="appetizer-3" name="appetizers" value="3" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <h3 class="page-main__restaurant__menu__heading">Plats</h3>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="main-dish-1" class="restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Filet de boeuf aux herbes</span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">Accompagné de sa ribambelle de légumes</span>
+                        <span class="page-main__restaurant__menu__item__body__price">40€</span>
+                    </label>
+                    <input type="radio" id="main-dish-1" name="main-dishes" value="1" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="main-dish-2" class="page-main__restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Parmentier de queue de boeuf</span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">À la truffe noire sur sa purée de panais</span>
+                        <span class="page-main__restaurant__menu__item__body__price">35€</span>
+                    </label>
+                    <input type="radio" id="main-dish-2" name="main-dishes" value="2" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="main-dish-3" class="restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Filet de turbot</span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">Aux agrumes</span>
+                        <span class="page-main__restaurant__menu__item__body__price">44€</span>
+                    </label>
+                    <input type="radio" id="main-dish-3" name="main-dishes" value="3" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <h3 class="page-main__restaurant__menu__heading">Desserts</h3>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="dessert-1" class="restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Paris-Brest</span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">Revisité</span>
+                        <span class="page-main__restaurant__menu__item__body__price">18€</span>
+                    </label>
+                    <input type="radio" id="dessert-1" name="desserts" value="1" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="dessert-2" class="restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Macaron au chocolat d'exception </span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">Et glace à la vanille de Madagascar</span>
+                        <span class="page-main__restaurant__menu__item__body__price">22€</span>
+                    </label>
+                    <input type="radio" id="dessert-2" name="desserts" value="2" class="page-main__restaurant__menu__item__choose">
+                </div>
+
+                <div class="page-main__restaurant__menu__item">
+                    <label for="dessert-3" class="restaurant__menu__item__body">
+                        <span class="page-main__restaurant__menu__item__body__heading">Mousse au chocolat </span>
+                        <span class="page-main__restaurant__menu__item__body__subheading">Au piment d'Espelette et à la truffe noire</span>
+                        <span class="page-main__restaurant__menu__item__body__price">23€</span>
+                    </label>
+                    <input type="radio" id="dessert-3" name="desserts" value="3" class="page-main__restaurant__menu__item__choose">
+                </div>
+                <input type="submit" name="order" value="Commander" class="page-main__restaurant__menu__button" /> 
             </form>
         </article>
     </main>

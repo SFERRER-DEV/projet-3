@@ -10,14 +10,21 @@
 </head>
 <body>
     <header class="page-header">
-        <h1 class="page-header__heading">Ohmyfood</h1>
+        <div class="page-header__link">
+            <a href="index.html" title="Accueil | Ohmyfood! Paris" >
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <h1 class="page-header__heading">ohmyfood</h1>
     </header>
-    <main>
+    <main class="page-main">
         <form action="#" method="get" class="booking">
-            <label for="location-etablishement" class="booking__field">
+            <div class="booking__field">
+                <label for="location-etablishement">
                 <i class="fa-solid fa-map-marker-alt"></i>
-            </label>
-            <input id="location-etablishement" name="location-etablishement" type="text" placeholder="Paris, Belleville" class="booking__field" />
+                </label>
+                <input id="location-etablishement" name="location-etablishement" type="text" placeholder="Paris, Belleville"/>
+            </div>
             <h2 class="booking__heading">Réservez le menu qui vout convient</h2>
             <p class="booking__byline">Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
             <button class="booking__button">

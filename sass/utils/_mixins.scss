@@ -1,0 +1,12 @@
+@mixin header-display-backlink($show: true){
+    @if ($show) {
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    } @else {
+        display: none;
+    }
+}

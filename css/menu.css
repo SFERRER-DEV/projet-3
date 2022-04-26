@@ -1,0 +1,10 @@
+.page-header__link > a {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/*# sourceMappingURL=menu.css.map */

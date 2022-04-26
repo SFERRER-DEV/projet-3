@@ -17,15 +17,70 @@ a:visited {
   color: black;
 }
 
-header > h1 {
+header {
+  border: 3px grey solid;
+}
+
+main {
+  border: 3px grey dotted;
+}
+
+footer {
+  border: 3px grey solid;
+}
+
+form, section {
+  border: 2px blue dotted;
+}
+
+.page-header {
+  width: 380px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-header__link {
+  min-width: 48px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-header__heading {
   font-family: "Shrikhand", cursive;
+  height: 100%;
+  margin: 0 48px 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+}
+
+.page-header__link > a {
+  display: none;
+}
+
+.page-footer {
+  width: 380px;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-main {
+  width: 380px;
 }
 
 /*# sourceMappingURL=style.css.map */

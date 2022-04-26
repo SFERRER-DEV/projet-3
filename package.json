@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Création du site Ohmyfood! Paris.",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+   "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/pages/menu.scss:./css/menu.css --style expanded"
   },
   "author": "Stphn Frrr"
 }

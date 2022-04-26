@@ -2,6 +2,9 @@ body {
  display: flex;
  flex-direction: column;
  align-content: center;
- justify-content: center;
+ flex-wrap: wrap;
 }
 
+.page-main {
+    width: 380px;
+}

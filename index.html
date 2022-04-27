@@ -18,31 +18,29 @@
         <h1 class="page-header__heading">ohmyfood</h1>
     </header>
     <main class="page-main">
-        <form action="#" method="get" class="booking">
-            <div class="booking__field">
+        <form action="#" method="get" class="page-main__booking">
+            <div class="page-main__booking__field">
                 <label for="location-etablishement">
                 <i class="fa-solid fa-map-marker-alt"></i>
                 </label>
                 <input id="location-etablishement" name="location-etablishement" type="text" placeholder="Paris, Belleville"/>
             </div>
-            <h2 class="booking__heading">Réservez le menu qui vout convient</h2>
-            <p class="booking__byline">Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
-            <button class="booking__button">
-                Explorez nos restaurants
-            </button>
+            <h2 class="page-main__booking__heading">Réservez le menu qui vout convient</h2>
+            <p class="page-main__booking__byline">Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
+            <input type="submit" name="order" value="Explorez nos restaurants" class="page-main__booking__button" /> 
         </form>
-        <section class="steps">
-            <h2 class="steps__heading">Fonctionnement</h2>
+        <section class="page-main__steps">
+            <h2 class="page-main__steps__heading">Fonctionnement</h2>
             <ol>
-                <li class="steps__item"><i class="fa-solid fa-mobile-alt"></i>Choissisez un restaurant</li>
-                <li class="steps__item"><i class="fa-solid fa-list"></i>Composez votre menu</li>
-                <li class="steps__item"><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                <li class="page-main__steps__item"><i class="fa-solid fa-mobile-alt"></i>Choissisez un restaurant</li>
+                <li class="page-main__steps__item"><i class="fa-solid fa-list"></i>Composez votre menu</li>
+                <li class="page-main__steps__item"><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
             </ol>
         </section>
-        <section class="etablishments">
-        <h2 class="etablishments__heading">Restaurants</h2>
+        <section class="page-main__etablishments">
+        <h2 class="page-main__etablishments__heading">Restaurants</h2>
         <a href="menu_palette_gout.html" class="etablishments__link">
-            <article class="card-restaurant">
+            <article class="page-main__card-restaurant">
                     <div class="card-restaurant__image">
                         <!-- active -->
                         <p class="card-restaurant__image__new--visible">Nouveau</p>

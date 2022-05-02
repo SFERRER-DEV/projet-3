@@ -5,7 +5,9 @@
     @include header-display-backlink(false);
 }
 
-/* Form explore restaurant for booking  */
+/* 
+    Boooking : Form explore restaurant 
+*/
 
 .page-main__booking {
     height: 330px;
@@ -70,7 +72,9 @@
     margin: 0;
 }
 
-/* Steps of operation */
+/* 
+    Steps of operation : 1, 2, 3
+*/
 
 .page-main__steps  {
     height: 430px;
@@ -143,10 +147,35 @@
     font-weight: bold;
 }
 
-/* Etablishments */
+/* 
+    Etablishments, restaurants
+*/
+
+.page-main__etablishments {
+    height: 1275px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.page-main__etablishments__container {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 .page-main__etablishments__heading {
     font-size: 24px;
     font-weight: bold;
+    width: 95%;
 }
 
+.page-main__etablishments__container__link {
+    display: block;
+}

@@ -5,18 +5,16 @@
 
 /* Form explore restaurant for booking  */
 .page-main__booking {
-  height: 280px;
+  height: 330px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
   background-color: #f6f6f6;
 }
 
 .page-main__booking__field {
   height: 60px;
   width: 100%;
+  flex-grow: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,16 +44,27 @@
   outline: none;
 }
 
-.page-main__booking__heading {
+.page-main__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  margin: 5% 0;
+}
+
+.page-main__container__booking__heading {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   width: 75%;
 }
 
-.page-main__booking__byline {
-  text-align: center;
+.page-main__container__booking__byline {
   width: 95%;
+  text-align: center;
+  margin: 0;
 }
 
 /* Steps of operation */

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css" >
     <title>Ohmyfood! Paris</title>
 </head>
 <body>
@@ -29,14 +30,16 @@
             <p class="page-main__booking__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>            
             <button type="submit" class="page-main__booking__button">Explorez nos restaurants</button>
         </form>
-        <section class="page-main__steps">
-            <h2 class="page-main__steps__heading">Fonctionnement</h2>
-            <ol>
-                <li class="page-main__steps__item"><i class="fa-solid fa-mobile-alt"></i>Choissisez un restaurant</li>
-                <li class="page-main__steps__item"><i class="fa-solid fa-list"></i>Composez votre menu</li>
-                <li class="page-main__steps__item"><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
-            </ol>
-        </section>
+        <nav class="page-main__steps">
+            <div class="page-main__steps__container">
+                <h4 class="page-main__steps__container__heading">Fonctionnement</h2>
+                <ol class="page-main__steps__container__list">
+                    <li class="page-main__steps__container__list__item"><i class="fa-solid fa-mobile-alt"></i><span>Choissisez un restaurant</span></li>
+                    <li class="page-main__steps__container__list__item"><i class="fa-solid fa-list"></i><span>Composez votre menu</span></li>
+                    <li class="page-main__steps__container__list__item"><i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span></li>
+                </ol>
+            </div>
+        </nav>
         <section class="page-main__etablishments">
         <h2 class="page-main__etablishments__heading">Restaurants</h2>
         <a href="menu_palette_gout.html" class="etablishments__link">

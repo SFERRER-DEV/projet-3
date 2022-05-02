@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.page-header__link > a {
+  display: none;
+}
+
+/* Form explore restaurant for booking  */
+.page-main__booking {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.page-main__booking__field {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 5px 8px -2px #bfbfbf;
+}
+.page-main__booking__field label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-main__booking__field label i {
+  font-size: 24px;
+}
+.page-main__booking__field input {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  border-style: none;
+}
+.page-main__booking__field input::placeholder {
+  color: black;
+  border-style: none;
+}
+.page-main__booking__field input:focus {
+  outline: none;
+}
+
+.page-main__booking__heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+}
+
+.page-main__booking__byline {
+  text-align: center;
+  width: 95%;
+}
+
+/* Steps of operation */
+.page-main__steps {
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.page-main__steps__container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__steps__container__heading {
+  font-size: 24px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+@counter-style circled-123 {
+  system: fixed;
+  symbols: "❶" "❷" "❸" "❹" "➀";
+  suffix: " ";
+}
+.page-main__steps__container__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 4;
+  list-style-type: none;
+  counter-reset: steps;
+  padding: 0;
+  margin: 0;
+}
+
+.page-main__steps__container__list__item {
+  flex-grow: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  padding: 18px 10px;
+  background-color: #f6f6f6;
+  box-shadow: 0 5px 10px #9e9e9e;
+  width: 90%;
+}
+.page-main__steps__container__list__item:before {
+  counter-increment: steps;
+  color: #9356DC;
+  content: counter(steps, circled-123);
+  font-size: 32px;
+  position: relative;
+  left: -20px;
+}
+
+.page-main__steps__container__list__item i {
+  flex-grow: 1;
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-main__steps__container__list__item span {
+  flex-grow: 2;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Etablishments */
+.page-main__etablishments__heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */

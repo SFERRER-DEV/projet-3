@@ -28,7 +28,3 @@
     align-content: center;
     flex-grow: 1;
 }
-
-.page-header__link > a {   
-    @include header-display-backlink(false);
-}

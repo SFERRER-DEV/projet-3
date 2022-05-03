@@ -1,4 +1,6 @@
 @import "../utils/mixins";
+@import "../utils/variables";
+
 
 .page-header__link > a {
     @include header-display-backlink(true);
@@ -56,6 +58,71 @@
 
 /* Menu */
 
+
 .page-main__restaurant__menu {
-    
+    position: relative;
+    top: -50px;
+    flex-grow: 1;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 1180px;
+}
+
+.page-main__restaurant__menu__heading {
+    text-transform: uppercase;
+}
+
+.page-main__restaurant__menu__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.page-main__restaurant__menu__item__body {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 70px;
+}
+
+.page-main__restaurant__menu__item__body__heading {
+    font-weight: bold;
+    flex-basis: 50%;
+    flex-grow: 1;
+    width:80%;
+    display: flex;
+    align-items: center;
+}
+
+.page-main__restaurant__menu__item__body__subheading {
+    flex-basis: 50%;
+    flex-grow: 1;
+    width:80%;
+    white-space:  nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+}
+
+.page-main__restaurant__menu__item__body__price {
+    flex-basis: 50%;
+    flex-grow: 0;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.page-main__restaurant__menu__item__choose {
+    border: 1px orange dotted;
 }

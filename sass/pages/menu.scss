@@ -3,3 +3,59 @@
 .page-header__link > a {
     @include header-display-backlink(true);
 }
+
+.page-main {
+
+}
+
+.page-main__restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea; 
+}
+
+.page-main__restaurant__image {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    overflow: auto;
+    width: 100%;
+}
+
+/* Heading */
+
+.page-main__restaurant__heading {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    top: -50px;
+    background-color: #eaeaea;
+}
+
+.page-main__restaurant__heading__caption {
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+    flex-basis: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 5% ;
+}
+
+.page-main__restaurant__heading__like {
+    font-size: 24px;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu */
+
+.page-main__restaurant__menu {
+    
+}

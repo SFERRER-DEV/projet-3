@@ -73,8 +73,15 @@
 }
 
 .page-main__restaurant__menu__heading {
-    text-transform: uppercase;
     align-self: flex-start;
+    text-transform: uppercase;
+    & span {
+       text-decoration: underline; 
+       text-decoration-style: solid;
+       text-decoration-color: $colour-tertiary;
+       text-decoration-thickness: 4px;
+       text-underline-offset: 4px;
+    }
 }
 
 .page-main__restaurant__menu__item {
@@ -129,3 +136,4 @@
 .page-main__restaurant__menu__item__choose {
     border: 1px orange dotted;
 }
+

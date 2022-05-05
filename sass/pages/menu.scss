@@ -68,11 +68,13 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
     height: 1180px;
 }
 
 .page-main__restaurant__menu__heading {
     text-transform: uppercase;
+    align-self: flex-start;
 }
 
 .page-main__restaurant__menu__item {
@@ -82,6 +84,7 @@
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    width: 100%;
 }
 
 .page-main__restaurant__menu__item__body {

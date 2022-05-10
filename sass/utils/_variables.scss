@@ -6,14 +6,18 @@ $colour-flag-1: #00A1DE;
 $colour-flag-2: white;
 $colour-flag-3: #ED2939;
 
-/* Check button menu dishes ok ko */
+/* Breakpoints: 390px mobile, 768px tablet */
+$my-break: 390px; 
+
+/* Animation check button menu dishes ok ko */
 $anim-timing-item-ok: 0.45s;
+$anim-timing-item-ok-tablet: 0.65s;
 $anim-timing-menu-apparition: 1.5s;
 $anim-timing-menu-apparition-delay: 0.1s;
 
-/* Loading spinner */
-$anim-timing-spinner: 1.75s;
+/* Animation loading spinner */
+$anim-timing-spinner: 0.1s;//1.75s;
 $anim-y-spinner: 32px;
 
-/* I like */
+/* Animation I like */
 $anim-timing-ilike: 1s;

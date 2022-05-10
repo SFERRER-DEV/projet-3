@@ -89,12 +89,13 @@
     height: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .page-main__steps__container__heading {
     font-size: 24px;
     font-weight: bold;
-    flex-grow: 1;
+    width: 95%;
 }
 
 @counter-style circled-123 {
@@ -104,6 +105,7 @@
   }
 
 .page-main__steps__container__list {
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

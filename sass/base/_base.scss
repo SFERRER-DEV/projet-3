@@ -9,7 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    width: 100%;
+    min-height: 100vh;
 }
 
 a {

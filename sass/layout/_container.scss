@@ -2,7 +2,13 @@
 @import "../utils/variables";
 
 .page-main {
-    width: 380px;
+    width: 100%;
+}
+
+@media screen and (min-width: $my-break) {
+    .page-main {
+        width: 100%;
+    }
 }
 
 /* 

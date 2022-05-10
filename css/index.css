@@ -1,10 +1,150 @@
 @charset "UTF-8";
+/* Check button menu dishes ok ko */
+/* Loading spinner */
+/* I like */
+/* Check button menu dishes ok ko */
+/* Loading spinner */
+/* I like */
+/*  Menu apparition */
+@keyframes menu-apparition {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*  Spinner ohmyfood! */
+@keyframes anim-ohmyfood-word {
+  0% {
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32px);
+  }
+}
+@keyframes anim-background {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+/*  I like ! */
+@keyframes anim-ilike-hover {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page-spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background-color: white;
+  animation: anim-background 1.75s forwards;
+}
+
+.page-spinner__l1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #00A1DE;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.1s infinite ease-in-out;
+}
+
+.page-spinner__l2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #00A1DE;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.15s infinite ease-in-out;
+}
+
+.page-spinner__l3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #00A1DE;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.2s infinite ease-in-out;
+}
+
+.page-spinner__l4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.25s infinite ease-in-out;
+}
+
+.page-spinner__l5 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.3s infinite ease-in-out;
+}
+
+.page-spinner__l6 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.35s infinite ease-in-out;
+}
+
+.page-spinner__l7 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #ED2939;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.4s infinite ease-in-out;
+}
+
+.page-spinner__l8 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #ED2939;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.45s infinite ease-in-out;
+}
+
+.page-spinner__l9 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  color: #ED2939;
+  text-shadow: #000 2px 2px 4px;
+  animation: anim-ohmyfood-word 1s 0.5s infinite ease-in-out;
+}
+
 .page-header__link > a {
   display: none;
 }
 
 /* 
-    Boooking : Form explore restaurant 
+    Form explorer and booking restaurant 
 */
 .page-main__booking {
   height: 330px;

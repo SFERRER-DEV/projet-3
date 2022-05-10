@@ -1,3 +1,6 @@
+/* Check button menu dishes ok ko */
+/* Loading spinner */
+/* I like */
 .page-header__link > a {
   flex-grow: 1;
   width: 100%;
@@ -33,92 +36,148 @@
   top: -50px;
   background-color: #eaeaea;
 }
-
 .page-main__restaurant__heading__caption {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
-  flex-basis: 80%;
+  width: 80%;
   height: 100px;
   display: flex;
   align-items: center;
   padding-left: 5%;
 }
-
 .page-main__restaurant__heading__like {
-  font-size: 24px;
-  flex-basis: 20%;
+  width: 20%;
+  border-radius: 0 20px 0 0;
+  position: relative;
+  background-color: black;
+}
+.page-main__restaurant__heading__like i {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0 20px 0 0;
+}
+.page-main__restaurant__heading__like:hover::before {
+  opacity: 1;
+}
+.page-main__restaurant__heading__like--ko, .page-main__restaurant__heading__like--ok {
+  transition-duration: 0.75s;
+  background-color: #eaeaea;
+  position: absolute;
+  /*
+  top: 0;
+  right: 0;
+  */
+  height: 100%;
+  mix-blend-mode: lighten;
+}
+.page-main__restaurant__heading__like:hover .page-main__restaurant__heading__like--ko {
+  opacity: 0;
 }
 
 /* Menu */
 .page-main__restaurant__menu {
   position: relative;
   top: -50px;
-  flex-grow: 1;
   padding: 0 5%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
   height: 1180px;
+}
+.page-main__restaurant__menu > div:nth-of-type(1n) {
+  animation-name: menu-apparition;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
 }
 
 .page-main__restaurant__menu__heading {
+  align-self: flex-start;
   text-transform: uppercase;
 }
+.page-main__restaurant__menu__heading span {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #99E2D0;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+}
 
+/* Menu item to ordered for eating*/
 .page-main__restaurant__menu__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
-}
-
-.page-main__restaurant__menu__item__body {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  height: 70px;
-}
-
-.page-main__restaurant__menu__item__body__heading {
-  font-weight: bold;
-  flex-basis: 50%;
-  flex-grow: 1;
-  width: 80%;
-  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  line-height: 32px;
+  font-size: 16px;
+  /* radio */
+  /* Label */
+  /* Menu item ordered : Green check*/
 }
-
-.page-main__restaurant__menu__item__body__subheading {
-  flex-basis: 50%;
-  flex-grow: 1;
+.page-main__restaurant__menu__item__choose {
+  display: none;
+}
+.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 32px;
+  font-size: 16px;
+  transition: min-width 0.45s linear;
+}
+.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__heading {
+  width: 100%;
+  font-weight: bold;
+  padding-left: 16px;
+}
+.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__subheading {
   width: 80%;
+  padding-left: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: flex;
-  align-items: center;
 }
-
-.page-main__restaurant__menu__item__body__price {
-  flex-basis: 50%;
-  flex-grow: 0;
+.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__price {
   width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: bold;
 }
-
-.page-main__restaurant__menu__item__choose {
-  border: 1px orange dotted;
+.page-main__restaurant__menu__item__choosen {
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
+  color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 25%;
+}
+.page-main__restaurant__menu__item__choosen i {
+  font-size: 32px;
+}
+.page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__body {
+  min-width: 75%;
+}
+.page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__choosen > i {
+  transform: rotate(360deg);
+  transition: transform 0.45s linear;
+}
+.page-main__restaurant__menu__item:not(:hover) > .page-main__restaurant__menu__item__body {
+  transition: min-width 0.3375s linear;
 }
 
 /*# sourceMappingURL=menu.css.map */

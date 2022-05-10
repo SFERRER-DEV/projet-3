@@ -43,3 +43,19 @@
         visibility: hidden;
     }
 }
+
+/*  I like ! */
+@keyframes anim-ilike-hover {
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}

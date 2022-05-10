@@ -1,13 +1,19 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
+
 $colour-flag-1: #00A1DE;
 $colour-flag-2: white;
 $colour-flag-3: #ED2939;
 
+/* Check button menu dishes ok ko */
 $anim-timing-item-ok: 0.45s;
 $anim-timing-menu-apparition: 1.5s;
 $anim-timing-menu-apparition-delay: 0.1s;
 
-$anim-timing-spinner: 3s;
-$anim-y-spinner: 32px
+/* Loading spinner */
+$anim-timing-spinner: 1.75s;
+$anim-y-spinner: 32px;
+
+/* I like */
+$anim-timing-ilike: 1s;

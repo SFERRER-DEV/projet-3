@@ -167,33 +167,73 @@
 */
 
 .page-main__etablishments {
-    height: 1275px;
+
+    height: 1450px;
     background-color: #f6f6f6;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding: 10% 0;
-}
+    padding: 5% 0;
 
-.page-main__etablishments__container {
-    width: 90%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.page-main__etablishments__heading {
-    font-size: 24px;
-    font-weight: bold;
-    width: 95%;
-}
-
-.page-main__etablishments__container__link {
-    display: block;
-    &:visited {
-        color: black;
+    @media screen and (min-width: $my-break) {
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1% 0;
+        
     }
+
+    &__container {
+
+        width: 90%;
+        flex-basis: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media screen and (min-width: $my-break) {
+            flex-basis: 100%;
+            height:100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            display: block;
+
+            @media screen and (min-width: $my-break) {
+                width: 40%;
+                height: 50%;
+            }
+            &:visited {
+                color: black;
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: bold;
+        width: 90%;
+        flex-basis: 5%;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: $my-break) {
+            border: 3px blueviolet dotted;
+            flex-basis: 100%;
+       }
+
+    }
+
+    
+
+
 }
+
+
+
+
+

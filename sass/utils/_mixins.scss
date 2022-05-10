@@ -43,3 +43,11 @@
     font-size: 24px;
     cursor: pointer;
 }
+
+@mixin ohmyfood_word($delay, $colour) {
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
+    color: $colour;
+    text-shadow: #000 2px 2px 4px ;
+    animation: anim-ohmyfood-word 1s $delay infinite ease-in-out;
+}

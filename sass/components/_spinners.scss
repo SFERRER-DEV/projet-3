@@ -1,0 +1,56 @@
+
+.page-spinner {
+    //top: 0;
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    z-index: 3;
+
+    background-color: white;
+    
+    animation: anim-background $anim-timing-spinner forwards;
+
+}
+
+.page-spinner__l1 {
+    @include ohmyfood_word(0.1s, $colour-flag-1);
+}
+
+.page-spinner__l2 {
+    @include ohmyfood_word(0.15s, $colour-flag-1);
+}
+
+.page-spinner__l3 {
+    @include ohmyfood_word(0.2s, $colour-flag-1);
+}
+
+.page-spinner__l4 {
+    @include ohmyfood_word(0.25s, $colour-flag-2);
+}
+
+.page-spinner__l5 {
+    @include ohmyfood_word(0.3s, $colour-flag-2);
+}
+
+.page-spinner__l6 {
+    @include ohmyfood_word(0.35s, $colour-flag-2);
+}
+
+.page-spinner__l7 {
+    @include ohmyfood_word(0.4s, $colour-flag-3);
+}
+
+.page-spinner__l8 {
+    @include ohmyfood_word(0.45s, $colour-flag-3);
+}
+
+.page-spinner__l9 {
+    @include ohmyfood_word(0.5s, $colour-flag-3);
+}
+

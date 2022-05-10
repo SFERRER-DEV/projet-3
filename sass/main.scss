@@ -1,12 +1,18 @@
 /* main.scss : style.css */
 @import "./utils/variables";
 @import "./utils/functions";
+
+@import "./utils/animations";
+
 @import "./utils/mixins";
 @import "./utils/extensions";
-@import "./utils/animations";
+
+
 @import "./base/base";
 @import "./base/typography";
+
 @import "./components/buttons";
+
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/nav";

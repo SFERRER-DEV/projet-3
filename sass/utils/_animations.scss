@@ -1,3 +1,7 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*  Menu apparition */
 @keyframes menu-apparition
 {
     from
@@ -9,5 +13,33 @@
     {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/*  Spinner ohmyfood! */
+@keyframes anim-ohmyfood-word {
+    0% {
+        color:white;
+    }
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY($anim-y-spinner);
+    }
+}
+
+@keyframes anim-background {
+    0% {
+        z-index: 100;
+    }
+
+    99% {
+        z-index: 100;
+    }
+
+    100% {
+        z-index: -12;
+        visibility: hidden;
     }
 }

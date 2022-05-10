@@ -1,7 +1,6 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-
 .page-header__link > a {
     @include header-display-backlink(true);
 }

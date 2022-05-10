@@ -1,12 +1,13 @@
 @import "../utils/mixins";
 @import "../utils/variables";
+@import "../components/spinners";
 
-.page-header__link > a {   
+.page-header__link > a {
     @include header-display-backlink(false);
 }
 
 /* 
-    Boooking : Form explore restaurant 
+    Form explorer and booking restaurant 
 */
 
 .page-main__booking {

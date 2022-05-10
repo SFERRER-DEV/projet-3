@@ -126,6 +126,9 @@
     background-color: #f6f6f6;
     box-shadow: 0 5px 10px #9e9e9e;
     width: 90%;
+    
+    transition: 1s;
+
     &:before {
         counter-increment: steps;
         color:  $colour-primary;
@@ -134,19 +137,27 @@
         position:relative;
         left: -20px;
     }
-}
 
-.page-main__steps__container__list__item i  {
-    flex-grow: 1;
-    color: gray;
-    font-size: 18px;
-    text-align: center;
-}
+    & i  {
+        flex-grow: 1;
+        color: gray;
+        font-size: 18px;
+        text-align: center;
+    }
 
-.page-main__steps__container__list__item span  {
-    flex-grow: 2;
-    font-size: 16px;
-    font-weight: bold;
+    &:hover {
+        background-color:  lighten($colour-primary, 35%);
+        cursor: pointer;
+        i {
+          color: $colour-primary;
+        }
+      }
+
+    & span  {
+        flex-grow: 2;
+        font-size: 16px;
+        font-weight: bold;
+    }
 }
 
 /* 

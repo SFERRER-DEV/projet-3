@@ -303,6 +303,7 @@
   background-color: #f6f6f6;
   box-shadow: 0 5px 10px #9e9e9e;
   width: 90%;
+  transition: 1s;
 }
 .page-main__steps__container__list__item:before {
   counter-increment: steps;
@@ -312,14 +313,19 @@
   position: relative;
   left: -20px;
 }
-
 .page-main__steps__container__list__item i {
   flex-grow: 1;
   color: gray;
   font-size: 18px;
   text-align: center;
 }
-
+.page-main__steps__container__list__item:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+.page-main__steps__container__list__item:hover i {
+  color: #9356DC;
+}
 .page-main__steps__container__list__item span {
   flex-grow: 2;
   font-size: 16px;

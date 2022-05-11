@@ -1,28 +1,7 @@
-.button1 {
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
-  color: white;
-  margin: 20px;
-  align-self: center;
-  font-weight: bolder;
-  font-size: 1em;
-  height: 50px;
-  transition: 0.2s ease-in;
-  padding: 0 20px 0 20px;
-}
-
-.button1:hover,
-.button1:focus {
-  transform: translateY(-1px);
-  transition: 0.2s ease-in;
-  opacity: 0.8;
-  box-shadow: 0.25em 0.25em 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Check button menu dishes ok ko */
-/* Loading spinner */
-/* I like */
+/* Breakpoints */
+/* Animation check button menu dishes ok ko */
+/* Animation loading spinner */
+/* Animation I like */
 .page-header__link > a {
   flex-grow: 1;
   width: 100%;
@@ -168,6 +147,7 @@
   width: 100%;
   font-weight: bold;
   padding-left: 16px;
+  font-size: 16px;
 }
 .page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__subheading {
   width: 80%;
@@ -200,6 +180,11 @@
 .page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__choosen > i {
   transform: rotate(360deg);
   transition: transform 0.45s linear;
+}
+@media screen and (min-width: 390px) {
+  .page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__choosen > i {
+    transition: transform 0.65s linear;
+  }
 }
 .page-main__restaurant__menu__item:not(:hover) > .page-main__restaurant__menu__item__body {
   transition: min-width 0.3375s linear;

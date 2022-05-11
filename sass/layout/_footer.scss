@@ -8,12 +8,11 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-}
 
-.page-footer{
     a {
         color:white;
     }
+
     &__heading {
         width: 90%;
         font-family: "Shrikhand", "cursive";
@@ -34,6 +33,17 @@
         margin: 0; 
         list-style: none;
 
+        &__item {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            
+            i {
+                margin-right: 8px;
+                width: 24px;
+            }
+        }
+
         & li:nth-of-type(-1n+3) {
             cursor: pointer;
         }
@@ -42,20 +52,10 @@
             margin-bottom: 5%;
         }
 
-        @media screen and (min-width:  map-get($breakpoints, mobile2)) {
+        @media screen and (min-width: $my-break) {
 
             & li:last-child {
                 margin-bottom: 1%;
-            }
-        }
-
-        &__item {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            & i {
-                margin-right: 8px;
-                width: 24px;
             }
         }
     }

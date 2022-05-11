@@ -42,7 +42,7 @@
             margin-bottom: 5%;
         }
 
-        @media screen and (min-width: $my-break) {
+        @media screen and (min-width:  map-get($breakpoints, mobile2)) {
 
             & li:last-child {
                 margin-bottom: 1%;

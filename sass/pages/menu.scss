@@ -201,7 +201,7 @@
         } 
     }
 
-    @media screen and (min-width: $my-break) {
+    @media screen and (min-width:  map-get($breakpoints, mobile2)) {
         &:hover > &__choosen { 
             & > i {
                 transition: transform  $anim-timing-item-ok-tablet linear;

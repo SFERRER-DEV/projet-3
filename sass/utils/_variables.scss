@@ -7,7 +7,14 @@ $colour-flag-2: white;
 $colour-flag-3: #ED2939;
 
 /* Breakpoints: 390px mobile, 768px tablet */
-$my-break: 390px; 
+$breakpoints: (
+  mobile1: 320px,
+  mobile2: 390px,
+  tablet1: 768px,
+  tablet2: 820px,
+  desktop: 992px
+);
+
 
 /* Animation check button menu dishes ok ko */
 $anim-timing-item-ok: 0.45s;
@@ -21,3 +28,4 @@ $anim-y-spinner: 32px;
 
 /* Animation I like */
 $anim-timing-ilike: 1s;
+

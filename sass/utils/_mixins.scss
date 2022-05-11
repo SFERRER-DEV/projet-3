@@ -15,8 +15,8 @@
 }
 
 @mixin button-ohmyfood {
-    width: fit-content;
-    min-width: 50%;
+    width: 60%;
+    min-width: fit-content;
     border-radius: 25px;
     border: none;
     padding: 15px 25px;
@@ -38,30 +38,6 @@
         box-shadow: 0 10px 10px #9e9e9e;
     }
 }
-
-
-.button1 {
-    border: none;
-    border-radius: 50px;
-    background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
-    color: white;
-    margin: 20px;
-    align-self: center;
-    font-weight: bolder;
-    font-size: 1em;
-    height: 50px;
-    transition: 0.2s ease-in;
-    padding: 0 20px 0 20px;
-} 
-
-.button1:hover,
-.button1:focus {
-    transform: translateY(-1px);
-    transition: 0.2s ease-in;
-    opacity: 0.8;
-    box-shadow: 0.25em 0.25em 10px rgba(0, 0, 0, 0.5)
-}
-
 
 @mixin menu-item-ok {
     border-radius: 0 20px 20px 0;

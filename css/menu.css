@@ -2,6 +2,160 @@
 /* Animation check button menu dishes ok ko */
 /* Animation loading spinner */
 /* Animation I like */
+/* Breakpoints */
+/* Animation check button menu dishes ok ko */
+/* Animation loading spinner */
+/* Animation I like */
+/* Breakpoints */
+/* Animation check button menu dishes ok ko */
+/* Animation loading spinner */
+/* Animation I like */
+/* Breakpoints */
+/* Animation check button menu dishes ok ko */
+/* Animation loading spinner */
+/* Animation I like */
+/*  Menu apparition */
+@keyframes menu-apparition-1 {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*  Spinner ohmyfood! */
+@keyframes anim-ohmyfood-word {
+  0% {
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32px);
+  }
+}
+@keyframes anim-background {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+/*  I like ! */
+@keyframes anim-ilike-hover {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-apparition, .page-main__restaurant__menu__button, .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
+  animation-name: menu-apparition-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
+}
+
+/* Menu item to ordered for eating*/
+.menu-item {
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 5px blueviolet solid;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 16px;
+  /* radio */
+  /* Label */
+  /* Menu item ordered : Green check*/
+}
+.menu-item__choose {
+  display: none;
+}
+.menu-item__body {
+  height: 70px;
+  min-width: 100%;
+  border: 3px red solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 16px;
+  transition: min-width 0.45s linear;
+}
+.menu-item__body__heading {
+  border: 1px red dotted;
+  width: 100%;
+  font-weight: bold;
+  padding-left: 16px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__body__subheading {
+  border: 1px red dotted;
+  width: 80%;
+  padding-left: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__body__price {
+  border: 1px red dotted;
+  width: 20%;
+  font-weight: bold;
+}
+.menu-item__choosen {
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
+  color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25%;
+  height: 70px;
+  border: 1px red dotted;
+}
+.menu-item__choosen i {
+  font-size: 32px;
+}
+.menu-item:hover > .menu-item__body {
+  min-width: 75%;
+}
+.menu-item:hover > .menu-item__choosen > i {
+  transform: rotate(360deg);
+  transition: transform 0.45s linear;
+}
+@media screen and (min-width: 390px) {
+  .menu-item:hover > .menu-item__choosen > i {
+    transition: transform 0.65s linear;
+  }
+}
+.menu-item:not(:hover) > .menu-item__body {
+  transition: min-width 0.3375s linear;
+}
+
 .page-header__link > a {
   flex-grow: 1;
   width: 100%;
@@ -14,12 +168,25 @@
   color: black;
 }
 
+.page-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 5px grey solid;
+}
 .page-main__restaurant {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   background-color: #eaeaea;
+  border: 5px red solid;
+  /* 
+      Heading 
+  */
+  /*
+      Menu 
+  */
 }
-
 .page-main__restaurant__image {
   height: 250px;
   object-fit: cover;
@@ -27,8 +194,6 @@
   overflow: auto;
   width: 100%;
 }
-
-/* Heading */
 .page-main__restaurant__heading {
   border-radius: 20px 20px 0 0;
   display: flex;
@@ -81,113 +246,66 @@
 .page-main__restaurant__heading__like:hover .page-main__restaurant__heading__like--ko {
   opacity: 0;
 }
-
-/* Menu */
 .page-main__restaurant__menu {
   position: relative;
   top: -50px;
-  padding: 0 5%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
   align-items: center;
-  height: 1180px;
+  border: 5px orange solid;
 }
-.page-main__restaurant__menu > div:nth-of-type(1n) {
-  animation-name: menu-apparition;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.1s;
+.page-main__restaurant__menu__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 5px black dotted;
 }
-
-.page-main__restaurant__menu__heading {
-  align-self: flex-start;
+@media screen and (min-width: 768px) {
+  .page-main__restaurant__menu__container {
+    height: 480px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
+  min-height: 285px;
+  flex-basis: content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  border: 5px aqua solid;
+}
+@media screen and (min-width: 768px) {
+  .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
+    width: 30%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+}
+.page-main__restaurant__menu__container__starters__heading, .page-main__restaurant__menu__container__dishes__heading, .page-main__restaurant__menu__container__desserts__heading {
+  width: 100%;
   text-transform: uppercase;
+  border: 5px aqua solid;
 }
-.page-main__restaurant__menu__heading span {
+.page-main__restaurant__menu__container__starters__heading span, .page-main__restaurant__menu__container__dishes__heading span, .page-main__restaurant__menu__container__desserts__heading span {
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: #99E2D0;
   text-decoration-thickness: 4px;
   text-underline-offset: 4px;
 }
-
-/* Menu item to ordered for eating*/
-.page-main__restaurant__menu__item {
-  overflow: hidden;
-  cursor: pointer;
-  width: 100%;
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  line-height: 32px;
-  font-size: 16px;
-  /* radio */
-  /* Label */
-  /* Menu item ordered : Green check*/
-}
-.page-main__restaurant__menu__item__choose {
-  display: none;
-}
-.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body {
-  height: 100%;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  line-height: 32px;
-  font-size: 16px;
-  transition: min-width 0.45s linear;
-}
-.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__heading {
-  width: 100%;
-  font-weight: bold;
-  padding-left: 16px;
-  font-size: 16px;
-}
-.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__subheading {
-  width: 80%;
-  padding-left: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.page-main__restaurant__menu__item .page-main__restaurant__menu__item__body__price {
-  width: 20%;
-  font-weight: bold;
-}
-.page-main__restaurant__menu__item__choosen {
-  border-radius: 0 20px 20px 0;
-  background: #99E2D0;
-  color: white;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  min-width: 25%;
-}
-.page-main__restaurant__menu__item__choosen i {
-  font-size: 32px;
-}
-.page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__body {
-  min-width: 75%;
-}
-.page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__choosen > i {
-  transform: rotate(360deg);
-  transition: transform 0.45s linear;
-}
-@media screen and (min-width: 390px) {
-  .page-main__restaurant__menu__item:hover > .page-main__restaurant__menu__item__choosen > i {
-    transition: transform 0.65s linear;
-  }
-}
-.page-main__restaurant__menu__item:not(:hover) > .page-main__restaurant__menu__item__body {
-  transition: min-width 0.3375s linear;
+.page-main__restaurant__menu__container__starters > div[class=menu-item], .page-main__restaurant__menu__container__dishes > div[class=menu-item], .page-main__restaurant__menu__container__desserts > div[class=menu-item] {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 /*# sourceMappingURL=menu.css.map */

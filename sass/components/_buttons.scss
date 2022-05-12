@@ -1,7 +1,12 @@
-.page-main__container__booking__button,
-.page-main__restaurant__menu__button  {
-    @include button-ohmyfood;
-    @media screen and (min-width: $my-break) {
-        width:25%;
+.page-main {
+    &__container__booking__button,
+    &__restaurant__menu__button  {
+
+        @include button-ohmyfood;
+        margin: 2% auto;
+        width: 60%;
+        @media screen and (min-width: map-get($breakpoints, tablet1)) {
+            width:25%;
+        }
     }
 }

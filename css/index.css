@@ -7,8 +7,12 @@
 /* Animation check button menu dishes ok ko */
 /* Animation loading spinner */
 /* Animation I like */
+/* Breakpoints */
+/* Animation check button menu dishes ok ko */
+/* Animation loading spinner */
+/* Animation I like */
 /*  Menu apparition */
-@keyframes menu-apparition {
+@keyframes menu-apparition-1 {
   from {
     transform: translateY(20%);
     opacity: 0;

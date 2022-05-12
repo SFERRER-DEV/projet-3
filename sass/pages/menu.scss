@@ -1,5 +1,8 @@
-@import "../utils/mixins";
 @import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/extensions";
+
+@import "../components/item";
 
 .page-header__link  {
     & > a {
@@ -7,218 +10,177 @@
     }
 }
 
-.page-main__restaurant {
+.page-main {
+
     display: flex;
     flex-direction: column;
-    background-color: #eaeaea; 
-}
+    flex-wrap: nowrap;
 
-.page-main__restaurant__image {
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    overflow: auto;
-    width: 100%;
-}
+    border: 5px grey solid;
 
-/* Heading */
-
-.page-main__restaurant__heading {
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    z-index: 1;
-    position: relative;
-    top: -50px;
-    background-color: #eaeaea;
-
-    &__caption {
-        font-family: "Shrikhand", cursive;
-        font-size: 28px;
-        width: 80%;
-        height: 100px;
+    &__restaurant {
         display: flex;
-        align-items: center;
-        padding-left: 5% ;
-    }
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #eaeaea; 
 
-    &__like {
+        border: 5px red solid;
 
-        width: 20%;
-        border-radius: 0 20px 0 0;
-
-        position: relative;
-    
-        background-color: black;
-
-        & i {
-            @include ilike;
+        &__image {
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            overflow: auto;
             width: 100%;
-            border-radius: 0 20px 0 0;
         }
 
-        &:hover::before {
-            opacity: 1;
-        }
-
-        &--ko,
-        &--ok {
-            transition-duration: 0.75s;
-            background-color: #eaeaea;
-            position: absolute;
-            /*
-            top: 0;
-            right: 0;
-            */
-            height: 100%;
-            mix-blend-mode: lighten;
-        }
-
-        &:hover {
-            .page-main__restaurant__heading__like--ko {
-                opacity: 0;
-            }
-        }
-
-    }
-}
-
-/* Menu */
-
-.page-main__restaurant__menu {
-    position: relative;
-    top: -50px;
-    padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 1180px;
-
-    & > div:nth-of-type(1n)
-    {
-        animation-name: menu-apparition;
-        animation-duration: $anim-timing-menu-apparition;
-        animation-timing-function: ease-in-out;
-        animation-delay: $anim-timing-menu-apparition-delay;
-    }
-}
-
-.page-main__restaurant__menu__heading {
-    align-self: flex-start;
-    text-transform: uppercase;
-    & span {
-       text-decoration: underline; 
-       text-decoration-style: solid;
-       text-decoration-color: $colour-tertiary;
-       text-decoration-thickness: 4px;
-       text-underline-offset: 4px;
-    }
-}
-
-/* Menu item to ordered for eating*/
-.page-main__restaurant__menu__item {
-
-    overflow: hidden;
-
-    cursor: pointer;
-
-    width: 100%;
-
-    background-color: white;
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-
-    line-height: 32px;
-    font-size: 16px;
-
-    /* radio */
-    &__choose { 
-        display: none;
-    }
-
-    /* Label */
-    .page-main__restaurant__menu__item__body { 
-
-        height: 100%;
-        min-width: 100%;
-
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        line-height: 32px;
-        font-size: 16px;
-
-        transition: min-width  $anim-timing-item-ok linear;
-
+/* 
+    Heading 
+*/
         &__heading {
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            flex-direction: row;
             width: 100%;
-            font-weight: bold;
-            padding-left: 16px;
-            font-size: 16px;
-        }
+            justify-content: space-between;
+            z-index: 1;
+            position: relative;
+            top: -50px;
+            background-color: #eaeaea;
 
-        &__subheading {
-            width: 80%;
-            padding-left: 16px;
-            white-space:  nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+            &__caption {
+                font-family: "Shrikhand", cursive;
+                font-size: 28px;
+                width: 80%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                padding-left: 5% ;
+            }
 
-        &__price {
-            width: 20%;
-            font-weight: bold;
-        }
-    }
-    
-    /* Menu item ordered : Green check*/
-    &__choosen { 
-        @include menu-item-ok;
-        height: 100%;
-        min-width: 25%;
-        & i {
-            font-size: 32px;
-        }
-    }
+            &__like {
+                width: 20%;
+                border-radius: 0 20px 0 0;
 
-    &:hover > &__body {
-        min-width: 75%;
-    }
+                position: relative;
+            
+                background-color: black;
 
-    &:hover > &__choosen { 
-        & > i {
-            transform: rotate(360deg);
-            transition: transform  $anim-timing-item-ok linear;
-        } 
-    }
+                & i {
+                    @include ilike;
+                    width: 100%;
+                    border-radius: 0 20px 0 0;
+                }
 
-    @media screen and (min-width: $my-break) {
-        &:hover > &__choosen { 
-            & > i {
-                transition: transform  $anim-timing-item-ok-tablet linear;
+                &:hover::before {
+                    opacity: 1;
+                }
+
+                &--ko,
+                &--ok {
+                    transition-duration: 0.75s;
+                    background-color: #eaeaea;
+                    position: absolute;
+                    /*
+                    top: 0;
+                    right: 0;
+                    */
+                    height: 100%;
+                    mix-blend-mode: lighten;
+                }
+
+                &:hover {
+                    .page-main__restaurant__heading__like--ko {
+                        opacity: 0;
+                    }
+                }
             }
         }
+
+/*
+    Menu 
+*/
+        &__menu {
+            position: relative;
+            top: -50px;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            border: 5px orange  solid;   
+
+            &__container {
+
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                border: 5px black  dotted;
+
+                @media screen and (min-width: map-get($breakpoints, tablet1)) {
+                    height: 480px;
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+
+                &__starters,
+                &__dishes,
+                &__desserts {
+
+                    min-height: 285px;
+                    flex-basis:content;
+                    width:100%;
+                    @media screen and (min-width: map-get($breakpoints, tablet1)) { 
+                        width:30%;
+                        height: 100%;
+                        flex-shrink: 0;
+                        flex-grow: 1;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    
+                    justify-content: flex-start;
+
+                    border: 5px aqua solid;
+
+                    @extend .menu-apparition; 
+
+                    &__heading {
+
+                        width: 100%;
+                        text-transform: uppercase;
+
+                        border: 5px aqua solid;
+
+                        span {
+                            text-decoration: underline; 
+                            text-decoration-style: solid;
+                            text-decoration-color: $colour-tertiary;
+                            text-decoration-thickness: 4px;
+                            text-underline-offset: 4px;
+                        }
+                    }
+
+                    > div[class="menu-item"] {
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+                    }
+                }
+            }
+
+            &__button {
+                @extend .menu-apparition; 
+            }
+
+        }
     }
-
-    &:not(:hover) > &__body   {
-        transition: min-width  $anim-timing-item-ok * 0.75 linear;
-    } 
-
 }
-
-
-
-
-
-
-
-

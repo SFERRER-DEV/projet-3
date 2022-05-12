@@ -1,0 +1,110 @@
+/* Menu item to ordered for eating*/
+.menu-item {
+
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+
+    cursor: pointer; 
+    border: 5px blueviolet solid;
+
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    font-size: 16px;
+
+    /* radio */
+    &__choose { 
+        display: none;
+    }
+
+    /* Label */
+    &__body { 
+
+        height: 70px;
+        min-width: 100%;
+
+        border: 3px red solid;
+
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        font-size: 16px;
+
+        transition: min-width  $anim-timing-item-ok linear;
+
+        &__heading {
+
+            border: 1px red dotted;
+
+            width: 100%;
+            font-weight: bold;
+            padding-left: 16px;
+            font-size: 16px;
+            white-space:  nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__subheading {
+
+            border: 1px red dotted;
+
+            width: 80%;
+            padding-left: 16px;
+            white-space:  nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__price {
+
+            border: 1px red dotted;
+
+            width: 20%;
+            font-weight: bold;
+        }
+    }
+    
+    /* Menu item ordered : Green check*/
+    &__choosen { 
+        @include menu-item-ok;
+        
+        min-width: 25%;
+        height: 70px;
+        border: 1px red dotted;
+        i {
+            font-size: 32px;
+        }
+    }
+
+
+    &:hover > &__body {
+        min-width: 75%;
+    }
+
+    &:hover > &__choosen { 
+        & > i {
+            transform: rotate(360deg);
+            transition: transform  $anim-timing-item-ok linear;
+        } 
+    }
+
+    @media screen and (min-width: $my-break) {
+        &:hover > &__choosen { 
+            & > i {
+                transition: transform  $anim-timing-item-ok-tablet linear;
+            }
+        }
+    }
+
+    &:not(:hover) > &__body   {
+        transition: min-width  $anim-timing-item-ok * 0.75 linear;
+    } 
+}

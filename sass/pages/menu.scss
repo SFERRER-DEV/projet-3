@@ -16,15 +16,11 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
-    border: 5px grey solid;
-
     &__restaurant {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         background-color: #eaeaea; 
-
-        border: 5px red solid;
 
         &__image {
             height: 250px;
@@ -110,18 +106,14 @@
             flex-wrap: nowrap;
             align-items: center;
 
-            border: 5px orange  solid;   
-
             &__container {
 
-                width: 100%;
+                width: 95%;
 
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 align-items: center;
-
-                border: 5px black  dotted;
 
                 @media screen and (min-width: map-get($breakpoints, tablet1)) {
                     height: 480px;
@@ -150,16 +142,13 @@
                     
                     justify-content: flex-start;
 
-                    border: 5px aqua solid;
-
                     @extend .menu-apparition; 
 
                     &__heading {
 
                         width: 100%;
                         text-transform: uppercase;
-
-                        border: 5px aqua solid;
+                        margin: 5% 0;
 
                         span {
                             text-decoration: underline; 
@@ -171,8 +160,7 @@
                     }
 
                     > div[class="menu-item"] {
-                        margin-top: 2%;
-                        margin-bottom: 2%;
+                        margin: 5% 0;
                     }
                 }
             }

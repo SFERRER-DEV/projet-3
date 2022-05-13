@@ -4,9 +4,9 @@
 
         @include button-ohmyfood;
         margin: 2% auto;
-        width: 60%;
-        @media screen and (min-width: map-get($breakpoints, tablet1)) {
-            width:25%;
+        width: 70%;
+        @media screen and (min-width: $my-break) {
+            width: 25%;
         }
     }
 }

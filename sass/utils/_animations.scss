@@ -43,8 +43,8 @@
     }
 }
 
-/*  I like ! */
-@keyframes anim-ilike-hover {
+/*  I like ! (using text-shadow technique) */
+@keyframes anim-ilike-shadow-hover  {
     0% {
         opacity: 0.1;
     }

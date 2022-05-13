@@ -6,6 +6,8 @@ $colour-flag-1: #00A1DE;
 $colour-flag-2: white;
 $colour-flag-3: #ED2939;
 
+$colour-background: #eaeaea;
+
 /* Breakpoints */
 $breakpoints: (
   mobile1: 320px,
@@ -15,7 +17,7 @@ $breakpoints: (
   desktop: 992px
 );
 
-$my-break: map-get($breakpoints, mobile2);
+$my-break: map-get($breakpoints, tablet1);
 
 /* Animation check button menu dishes ok ko */
 $anim-timing-item-ok: 0.45s;

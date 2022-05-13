@@ -53,6 +53,7 @@
     justify-content: center;
 }
 
+/*
 @mixin ilike {
     display: flex;
     align-items: center;
@@ -60,6 +61,7 @@
     font-size: 24px;
     cursor: pointer;
 }
+*/
 
 @mixin ohmyfood_word($delay, $colour) {
     font-family: 'Shrikhand', cursive;

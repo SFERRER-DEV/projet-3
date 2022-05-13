@@ -74,30 +74,6 @@
                 display: flex;
                 align-items: flex-start;
             }
-    
-            /* i like */ 
-            &__like {
-                height: 100%;
-                width: 15%;
-                font-size: 24px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                color: white;
-                opacity: 1;
-                text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px black;
-    
-                &:hover {
-                    background: linear-gradient($colour-primary, $colour-secondary);
-                    background-clip: text;
-                    -webkit-background-clip: text; /* fix */
-                    color: transparent;
-                    animation: anim-ilike-hover $anim-timing-ilike;
-                    opacity: 1;
-                    text-shadow: none;
-                }
-            }    
         }
     }
 }

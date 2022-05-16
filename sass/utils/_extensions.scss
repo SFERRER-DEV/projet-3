@@ -1,9 +1,0 @@
-@import "../utils/variables";
-@import "../utils/animations";
-
-.menu-apparition {
-    animation-name: menu-apparition-1;
-    animation-duration: $anim-timing-menu-apparition;
-    animation-timing-function: ease-in-out;
-    animation-delay: $anim-timing-menu-apparition-delay;
-}

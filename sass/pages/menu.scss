@@ -101,11 +101,10 @@
                     }
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: nowrap;
-                    
+                    flex-wrap: nowrap;                    
                     justify-content: flex-start;
 
-                    @extend .menu-apparition; 
+                    @include menu-apparition;
 
                     &__heading {
 
@@ -132,8 +131,8 @@
             }
 
             &__button {
-                /* Order */
-                @extend .menu-apparition; 
+                /* Order menu */
+                @include menu-apparition;
                 margin-top: 8%;
                 margin-bottom: 10%;
                 @media screen and (min-width: $my-break) {

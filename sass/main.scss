@@ -1,15 +1,14 @@
-/* main.scss : style.css */
+/* style.css */
 @import "./utils/variables";
-@import "./utils/functions";
-
-@import "./utils/animations";
-
-@import "./utils/mixins";
-@import "./utils/extensions";
-
 
 @import "./base/base";
 @import "./base/typography";
+
+@import "./utils/mixins";
+@import "./utils/functions";
+@import "./utils/extensions";
+
+@import "./utils/animations";
 
 @import "./components/buttons";
 @import "./components/ilike";

@@ -1,129 +1,7 @@
-/* main.scss : style.css */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/*  Menu apparition */
+/* style.css */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
-@keyframes menu-apparition-1 {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/*  Spinner ohmyfood! */
-@keyframes anim-ohmyfood-word {
-  0% {
-    color: white;
-  }
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(32px);
-  }
-}
-@keyframes anim-background {
-  0% {
-    z-index: 100;
-  }
-  99% {
-    z-index: 100;
-  }
-  100% {
-    z-index: -12;
-    visibility: hidden;
-  }
-}
-/*  I like ! (using text-shadow technique) */
-@keyframes anim-ilike-shadow-hover {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/*  Menu apparition */
-@keyframes menu-apparition-1 {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/*  Spinner ohmyfood! */
-@keyframes anim-ohmyfood-word {
-  0% {
-    color: white;
-  }
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(32px);
-  }
-}
-@keyframes anim-background {
-  0% {
-    z-index: 100;
-  }
-  99% {
-    z-index: 100;
-  }
-  100% {
-    z-index: -12;
-    visibility: hidden;
-  }
-}
-/*  I like ! (using text-shadow technique) */
-@keyframes anim-ilike-shadow-hover {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu-apparition {
-  animation-name: menu-apparition-1;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.1s;
-}
-
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -158,6 +36,56 @@ fieldset {
   margin: 0;
 }
 
+/*  Spinner ohmyfood! */
+@keyframes anim-ohmyfood-word {
+  0% {
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32px);
+  }
+}
+/*  Menu apparition */
+@keyframes menu-apparition-1 {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes anim-background {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+/*  I like ! (using text-shadow technique) */
+@keyframes anim-ilike-shadow-hover {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .page-main__booking__container__link__button, .page-main__restaurant__menu__button {
   /* Button Ohmyfood */
   display: block;
@@ -340,14 +268,8 @@ fieldset {
   }
 }
 
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
 .card-restaurant {
-  /* card restaurant */
+  /* Card restaurant */
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 10px #9e9e9e;

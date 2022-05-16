@@ -1,3 +1,4 @@
+
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
@@ -9,26 +10,20 @@ $colour-flag-3: #ED2939;
 $colour-background: #eaeaea;
 
 $breakpoints: (
-  /* Breakpoints */
   mobile1: 320px,
   mobile2: 390px,
   tablet1: 768px,
   tablet2: 820px,
   desktop: 992px
 );
-
 $my-break: map-get($breakpoints, tablet1);
 
-/* Animation check button menu dishes ok ko */
 $anim-timing-item-ok: 0.45s;
 $anim-timing-item-ok-tablet: 0.65s;
 $anim-timing-menu-apparition: 1.5s;
 $anim-timing-menu-apparition-delay: 0.1s;
 
-/* Animation loading spinner */
 $anim-timing-spinner: 1.75s;
 $anim-y-spinner: 32px;
 
-/* Animation I like */
 $anim-timing-ilike: 1s;
-

@@ -1,72 +1,3 @@
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/* Animation check button menu dishes ok ko */
-/* Animation loading spinner */
-/* Animation I like */
-/*  Menu apparition */
-@keyframes menu-apparition-1 {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/*  Spinner ohmyfood! */
-@keyframes anim-ohmyfood-word {
-  0% {
-    color: white;
-  }
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(32px);
-  }
-}
-@keyframes anim-background {
-  0% {
-    z-index: 100;
-  }
-  99% {
-    z-index: 100;
-  }
-  100% {
-    z-index: -12;
-    visibility: hidden;
-  }
-}
-/*  I like ! (using text-shadow technique) */
-@keyframes anim-ilike-shadow-hover {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu-apparition, .page-main__restaurant__menu__button, .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
-  animation-name: menu-apparition-1;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.1s;
-}
-
 .menu-item {
   /* A dish menu item to order */
   height: 70px;
@@ -80,7 +11,7 @@
   flex-wrap: nowrap;
   align-items: center;
   font-size: 16px;
-  /* radio */
+  /* Radio */
   /* Label */
 }
 .menu-item__choose {
@@ -237,6 +168,11 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  /* Animation apparition menu & button */
+  animation-name: menu-apparition-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
 }
 @media screen and (min-width: 768px) {
   .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
@@ -267,7 +203,12 @@
   }
 }
 .page-main__restaurant__menu__button {
-  /* Order */
+  /* Order menu */
+  /* Animation apparition menu & button */
+  animation-name: menu-apparition-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
   margin-top: 8%;
   margin-bottom: 10%;
 }

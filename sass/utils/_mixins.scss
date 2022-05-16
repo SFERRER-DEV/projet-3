@@ -1,5 +1,3 @@
-@import "../utils/variables";
-
 @mixin header-display-backlink($show: true){
     @if ($show) {
         flex-grow: 1;
@@ -59,4 +57,12 @@
     color: $colour;
     text-shadow: #000 2px 2px 4px ;
     animation: anim-ohmyfood-word 1s $delay infinite ease-in-out;
+}
+
+@mixin menu-apparition {
+    /* Animation apparition menu & button */
+    animation-name: menu-apparition-1;
+    animation-duration: $anim-timing-menu-apparition;
+    animation-timing-function: ease-in-out;
+    animation-delay: $anim-timing-menu-apparition-delay;
 }

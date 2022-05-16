@@ -1,5 +1,36 @@
-/* i like using text-shadow technique on solid icon */ 
+.ilike {
+    /* i like using technique with two icons solid & regular */ 
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        &--ok {
+
+            cursor: pointer;
+
+            font-size: 24px;
+            color: black;
+
+            &:before {
+                content: "\f004";
+                transition: color 1s ease-out;
+              }
+            
+              &:hover::before {
+                font-weight: bold;
+                color: transparent;
+                background: linear-gradient($colour-primary, $colour-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: all .5s ease-out;
+              }
+        }
+}
+
 .ilike-shadow {
+    /* i like using text-shadow technique on solid icon */ 
     height: 100%;
     width: 15%;
     font-size: 24px;
@@ -22,42 +53,4 @@
     }
 }
 
-/*  */
-
-.page-main__restaurant__heading__icon {
-    width: 20%;
-    border-radius: 0 20px 0 0;
-}
-
-.ilike {
-
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-        &--ok {
-
-            cursor: pointer;
-
-            font-size: 24px;
-            color: black;
-
-            &:before {
-                content: "\f004";
-                transition: color 1s ease-out;
-              }
-            
-              &:hover::before {
-                
-                font-weight: bold;
-                color: transparent;
-                background: linear-gradient($colour-primary, $colour-secondary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                transition: all .5s ease-out;
-              }
-        }
-}
 

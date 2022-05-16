@@ -1,6 +1,5 @@
-/* Menu item to ordered for eating*/
 .menu-item {
-
+/* A dish menu item to order */
     height: 70px;
     width: 100%;
     overflow: hidden;
@@ -65,8 +64,8 @@
         }
     }
     
-    /* Menu item ordered : Green check*/
     &__choosen { 
+        /* Menu item ordered : Green checked */
         @include menu-item-ok;
         
         min-width: 25%;

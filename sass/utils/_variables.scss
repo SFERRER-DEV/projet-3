@@ -8,8 +8,8 @@ $colour-flag-3: #ED2939;
 
 $colour-background: #eaeaea;
 
-/* Breakpoints */
 $breakpoints: (
+  /* Breakpoints */
   mobile1: 320px,
   mobile2: 390px,
   tablet1: 768px,
@@ -26,7 +26,7 @@ $anim-timing-menu-apparition: 1.5s;
 $anim-timing-menu-apparition-delay: 0.1s;
 
 /* Animation loading spinner */
-$anim-timing-spinner: 0.1s;//1.75s;
+$anim-timing-spinner: 1.75s;
 $anim-y-spinner: 32px;
 
 /* Animation I like */

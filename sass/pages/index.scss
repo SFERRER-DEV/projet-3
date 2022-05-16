@@ -3,6 +3,9 @@
 @import "../utils/animations";
 @import "../components/spinners";
 
+/*
+    Page index/home
+*/
 .page-header__link > a {
     @include header-display-backlink(false);
 }
@@ -15,10 +18,8 @@
 
 .page-main {
 
-/* 
-    Form explore restaurant for booking
-*/
     &__booking {
+        /* Form explore restaurant for booking */
         height: 330px;
         @media screen and (min-width: $my-break) {
             height: 250px;
@@ -30,6 +31,7 @@
         background-color: #f6f6f6;
 
         &__field {
+            /* Field location search */
             height: 45px;
             width: 100%;
             flex-grow: 0;
@@ -72,40 +74,60 @@
                 }
             }
         }
+
+        &__container {
+            /* Book the menu for you */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 5% 0;
+            @media screen and (min-width: $my-break) {
+                margin: 1% 0;
+            }
+    
+            &__heading {
+                font-size: 24px;
+                font-weight: bold;
+                width: 100%;
+                padding: 0 13%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                @media screen and (min-width: $my-break) {
+                    flex-basis: 35%;
+                }
+            }
+
+            &__byline {
+                width: 100%;
+                margin: 0;
+                padding: 0 6%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                @media screen and (min-width: $my-break) {
+                    flex-basis: 15%;
+                }
+            }
+
+            &__link {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                @media screen and (min-width: $my-break) {
+                    flex-basis: 50%;
+                }
+            }
+        }
     }
 
-    &__container {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        margin: 5% 0;
-        @media screen and (min-width: $my-break) {
-            margin: 1% 0;
-        }
-
-        &__booking__heading {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            width: 75%;
-        }
-
-        &__booking__byline {
-            width: 95%;
-            text-align: center;
-            margin: 0;
-        }
-    }
-
-/* 
-    Steps of operation : 1, 2, 3
-*/
     &__steps  {
-
+        /* Steps of operation : 1, 2, 3 */
         height: 450px;
         margin-bottom: 10%;
         @media screen and (min-width: $my-break) {
@@ -197,11 +219,8 @@
         }
     }
 
-/* 
-    Etablishments, restaurants
-*/
-
     &__etablishments {
+        /* Etablishments, restaurants */
         height: 1250px;
         display: flex;
         flex-direction: column;

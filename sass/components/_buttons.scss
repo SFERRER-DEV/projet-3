@@ -1,13 +1,13 @@
 .page-main {
-    &__container__booking__button,
+    &__booking__container__link__button,
     &__restaurant__menu__button  {
-
+/* Button Ohmyfood */
         @include button-ohmyfood;
-        margin: 8% auto 12% auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 60%;
         @media screen and (min-width: $my-break) {
             width: 25%;
-            margin: 4% auto 2% auto;
         }
     }
 }

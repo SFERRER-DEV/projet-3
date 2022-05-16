@@ -20,9 +20,9 @@
     
     display: block;
     cursor: pointer;
-
     border-radius: 25px;
     border: none;
+    min-width: fit-content;
     height: 48px;
     line-height: 48px;
     font-size: 16px;
@@ -52,16 +52,6 @@
     align-items: center;
     justify-content: center;
 }
-
-/*
-@mixin ilike {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-}
-*/
 
 @mixin ohmyfood_word($delay, $colour) {
     font-family: 'Shrikhand', cursive;

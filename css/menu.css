@@ -173,6 +173,7 @@
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0.1s;
+  animation-fill-mode: backwards;
 }
 @media screen and (min-width: 768px) {
   .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
@@ -209,6 +210,7 @@
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0.1s;
+  animation-fill-mode: backwards;
   margin-top: 8%;
   margin-bottom: 10%;
 }

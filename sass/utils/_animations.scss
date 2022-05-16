@@ -16,16 +16,14 @@
 /*  Menu apparition */
 @keyframes menu-apparition-1
 {
-    from
-    {
-        transform: translateY(20%);
+    from {
         opacity: 0;
-    }
-    to
-    {
-        transform: translateY(0);
+        transform: translateY(20%)
+      }
+      to {
         opacity: 1;
-    }
+        transform: translateY(0)
+      }
 }
 
 @keyframes anim-background {

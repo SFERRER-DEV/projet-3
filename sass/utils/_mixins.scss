@@ -65,4 +65,5 @@
     animation-duration: $anim-timing-menu-apparition;
     animation-timing-function: ease-in-out;
     animation-delay: $anim-timing-menu-apparition-delay;
+    animation-fill-mode: backwards;
 }

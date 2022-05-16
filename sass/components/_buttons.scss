@@ -3,10 +3,11 @@
     &__restaurant__menu__button  {
 
         @include button-ohmyfood;
-        margin: 2% auto;
-        width: 70%;
+        margin: 8% auto 12% auto;
+        width: 60%;
         @media screen and (min-width: $my-break) {
             width: 25%;
+            margin: 4% auto 2% auto;
         }
     }
 }

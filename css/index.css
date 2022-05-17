@@ -185,16 +185,6 @@
     flex-basis: 15%;
   }
 }
-.page-main__booking__container__link {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .page-main__booking__container__link {
-    flex-basis: 50%;
-  }
-}
 .page-main__steps {
   /* Steps of operation : 1, 2, 3 */
   height: 450px;

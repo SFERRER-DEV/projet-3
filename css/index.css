@@ -84,7 +84,7 @@
 
 @counter-style circled-123 {
   system: fixed;
-  symbols: "❶" "❷" "❸" "❹" "➀";
+  symbols: "❶" "❷" "❸";
   suffix: " ";
 }
 .page-main__booking {

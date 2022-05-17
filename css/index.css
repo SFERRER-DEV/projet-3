@@ -8,7 +8,7 @@
   justify-content: center;
   z-index: 3;
   background-color: white;
-  animation: anim-background 0.1s forwards;
+  animation: anim-background 1.75s forwards;
 }
 .page-spinner__l1 {
   font-family: "Shrikhand", cursive;

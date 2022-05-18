@@ -202,7 +202,6 @@ fieldset {
 
 .page-footer {
   /* Page footer */
-  width: 100%;
   flex-basis: 200px;
   background-color: #353535;
   color: white;

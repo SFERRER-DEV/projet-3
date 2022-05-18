@@ -29,7 +29,7 @@
     background-color: $colour-primary;
     background: $colour-secondary;
     background-image: linear-gradient(to left top,  $colour-primary 10%, $colour-secondary 90%);
-    box-shadow: 0 5px 10px #9e9e9e;
+    box-shadow: 0 5px 10px $colour-shadow;
     transition: transform 0.2s ease-in;
     
     &:hover,
@@ -37,7 +37,7 @@
         transform: translateY(-1px);
         transition: 0.2s ease-in;
         opacity: 0.85;
-        box-shadow: 0 10px 10px #9e9e9e;
+        box-shadow: 0 10px 10px $colour-shadow;
     }
 }
 
@@ -55,7 +55,7 @@
     font-family: 'Shrikhand', cursive;
     font-size: 50px;
     color: $colour;
-    text-shadow: #000 2px 2px 4px ;
+    text-shadow: black 2px 2px 4px ;
     animation: anim-ohmyfood-word 1s $delay infinite ease-in-out;
 }
 

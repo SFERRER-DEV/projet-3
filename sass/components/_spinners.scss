@@ -1,5 +1,5 @@
 .page-spinner {
-    /* Loading spinner "Ohmyfood!" : french flag waved */
+    /* Loading spinner "Ohmyfood!" : colored flag waved */
     position: fixed;
 
     width: 100%;
@@ -17,39 +17,39 @@
 
 
     &__l1 {
-        @include ohmyfood_word(0.1s, $colour-flag-1);
+        @include ohmyfood_word(0.1s, $colour-primary);
     }
     
     &__l2 {
-        @include ohmyfood_word(0.15s, $colour-flag-1);
+        @include ohmyfood_word(0.15s, lighten($colour-primary, 10%));
     }
     
     &__l3 {
-        @include ohmyfood_word(0.2s, $colour-flag-1);
+        @include ohmyfood_word(0.2s, lighten($colour-primary, 15%));
     }
     
     &__l4 {
-        @include ohmyfood_word(0.25s, $colour-flag-2);
+        @include ohmyfood_word(0.25s, lighten($colour-primary, 25%));
     }
     
     &__l5 {
-        @include ohmyfood_word(0.3s, $colour-flag-2);
+        @include ohmyfood_word(0.3s, white);
     }
     
     &__l6 {
-        @include ohmyfood_word(0.35s, $colour-flag-2);
+        @include ohmyfood_word(0.35s, lighten($colour-secondary, 20%));
     }
     
     &__l7 {
-        @include ohmyfood_word(0.4s, $colour-flag-3);
+        @include ohmyfood_word(0.4s, lighten($colour-secondary, 15%));
     }
     
     &__l8 {
-        @include ohmyfood_word(0.45s, $colour-flag-3);
+        @include ohmyfood_word(0.45s, lighten($colour-secondary, 10%));
     }
     
     &__l9 {
-        @include ohmyfood_word(0.5s, $colour-flag-3);
+        @include ohmyfood_word(0.5s, $colour-secondary);
     }
 
 }

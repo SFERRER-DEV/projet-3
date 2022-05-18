@@ -7,6 +7,7 @@
     cursor: pointer; 
 
     background-color: white;
+    box-shadow: 5px 5px 4px 2px darken($colour-background, $colour-percent), -2px -2px 4px 0 darken($colour-background, $colour-percent);
     border-radius: 20px;
 
     display: flex;

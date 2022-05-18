@@ -12,6 +12,9 @@
 body {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 a {
@@ -200,18 +203,18 @@ fieldset {
 .page-footer {
   /* Page footer */
   width: 100%;
-  height: 200px;
+  flex-basis: 200px;
   background-color: #353535;
   color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
   .page-footer {
-    height: 150px;
+    flex-grow: 1;
   }
 }
 .page-footer a {
@@ -228,6 +231,7 @@ fieldset {
 @media screen and (min-width: 768px) {
   .page-footer__heading {
     flex-basis: 50%;
+    max-height: 75px;
     align-items: center;
   }
 }
@@ -245,6 +249,7 @@ fieldset {
     flex-direction: row;
     align-items: center;
     flex-basis: 50%;
+    max-height: 75px;
   }
 }
 .page-footer__list__item {

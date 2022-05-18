@@ -99,11 +99,21 @@
   flex-direction: column;
   flex-wrap: nowrap;
 }
+@media screen and (min-width: 768px) {
+  .page-main {
+    flex-grow: 2;
+  }
+}
 .page-main__restaurant {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   background-color: #eaeaea;
+}
+@media screen and (min-width: 768px) {
+  .page-main__restaurant {
+    flex-grow: 1;
+  }
 }
 .page-main__restaurant__image {
   height: 250px;
@@ -156,10 +166,13 @@
 }
 @media screen and (min-width: 768px) {
   .page-main__restaurant__menu__container {
-    height: 450px;
-    flex-grow: 1;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
   }
 }
 .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
@@ -168,6 +181,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: center;
   /* Animation apparition menu & button */
   animation-name: menu-apparition-1;
   animation-duration: 1.5s;
@@ -177,16 +191,22 @@
 }
 @media screen and (min-width: 768px) {
   .page-main__restaurant__menu__container__starters, .page-main__restaurant__menu__container__dishes, .page-main__restaurant__menu__container__desserts {
-    width: 30%;
-    min-height: 100%;
-    flex-shrink: 0;
+    flex-basis: 30%;
+    max-width: 33%;
+    height: 100%;
     flex-grow: 1;
+    flex-shrink: 1;
   }
 }
 .page-main__restaurant__menu__container__starters__heading, .page-main__restaurant__menu__container__dishes__heading, .page-main__restaurant__menu__container__desserts__heading {
   width: 100%;
-  text-transform: uppercase;
   margin: 5% 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .page-main__restaurant__menu__container__starters__heading, .page-main__restaurant__menu__container__dishes__heading, .page-main__restaurant__menu__container__desserts__heading {
+    width: 90%;
+  }
 }
 .page-main__restaurant__menu__container__starters__heading span, .page-main__restaurant__menu__container__dishes__heading span, .page-main__restaurant__menu__container__desserts__heading span {
   text-decoration: underline;
@@ -201,6 +221,7 @@
 @media screen and (min-width: 768px) {
   .page-main__restaurant__menu__container__starters > div[class=menu-item], .page-main__restaurant__menu__container__dishes > div[class=menu-item], .page-main__restaurant__menu__container__desserts > div[class=menu-item] {
     margin: 5% 0;
+    width: 90%;
   }
 }
 .page-main__restaurant__menu__button {
